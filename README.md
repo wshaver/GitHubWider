@@ -12,3 +12,5 @@ To install:
 3. Click the Load unpacked extension button. A file dialog appears.
 
 4. In the file dialog, navigate to GitHubWider code folder and click OK.
+
+Some really long text. Some really long text. Some really long text. Some really long text. Some really long text. Some really long text. Some really long text. Some really long text.
