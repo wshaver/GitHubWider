@@ -25,8 +25,7 @@ window.___GitHubWider_resetWidth = function(){
 			for(var i = 0; i < containers.length; i++){
 				containers[i].style.width = "auto";
 				containers[i].style.minWidth = "920px";
-				containers[i].style.maxWidth = (window.innerWidth - 60) + 'px'
-				
+				containers[i].style.maxWidth = (window.innerWidth - 60) + 'px';
 			}
 		};
 	internalReset();
