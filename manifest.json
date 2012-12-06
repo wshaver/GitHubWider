@@ -1,6 +1,6 @@
 {
   "name": "GitHubWider",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 2,
   "description": "Make GitHub's layout flow to screen width and prevent horizontal scrolling of individual code files.",
   "page_action": {
@@ -10,9 +10,9 @@
   "background": { "scripts": ["background.js"] },
   "content_scripts": [
   {
-      "matches": ["http://github.com/*", "https://github.com/*"],      
+      "matches": ["http://github.com/*", "https://github.com/*"],
       "js": ["wider.js"]
-  } 
+  }
   ],
   "permissions": [
 	"tabs", "http://github.com/", "https://github.com/"

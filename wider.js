@@ -1,5 +1,5 @@
 window.___GitHubWider_resetWidth = function(){
-	var internalReset = function(){				
+	var internalReset = function(){
 			var slider = document.getElementById('slider');
 			if(slider) {
 				slider.style.overflow = "visible";
@@ -13,7 +13,9 @@ window.___GitHubWider_resetWidth = function(){
 			var frames = document.getElementsByClassName('frame');
 			for(var i = 0; i < frames.length; i++) {
 				if(frames[i].className == 'frame') {
-					frames[i].style.display = "none";
+					frames[i].style.width = "auto";
+					frames[i].style.minWidth = "920px";
+					frames[i].style.maxWidth = (window.innerWidth - 60) + 'px';
 				}
 			}
 			var containers = document.getElementsByClassName('container');
