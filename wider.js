@@ -7,7 +7,7 @@ window.___GitHubWider_resetWidth = function(){
 			} else {
 				var files = document.getElementById('files');
 				if(!files) {
-					return;
+					//return;
 				}
 			}
 			var frames = document.getElementsByClassName('frame');
@@ -29,6 +29,16 @@ window.___GitHubWider_resetWidth = function(){
 				containers[i].style.minWidth = "920px";
 				containers[i].style.maxWidth = (window.innerWidth - 60) + 'px';
 			}
+
+			//new for updated github version
+			containers = document.getElementsByClassName('repository-content');
+			for(var i = 0; i < containers.length; i++){
+				containers[i].style.width = "auto";
+				containers[i].style.minWidth = "920px";
+				containers[i].style.maxWidth = (window.innerWidth - 360) + 'px';
+			}
+
+
 		};
 	internalReset();
 	setTimeout(internalReset, 300);
